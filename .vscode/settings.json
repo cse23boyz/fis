@@ -1,0 +1,12 @@
+{
+    "workbench.settings.useSplitJSON": true
+    
+}
+
+"files.associations": {
+  "*.css": "tailwindcss"
+}
+
+"editor.quickSuggestions": {
+  "strings": "on"
+}

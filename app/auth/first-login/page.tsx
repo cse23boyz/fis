@@ -70,6 +70,9 @@ export default function FirstLoginPage() {
   const handleAdminLogin = () => {
     router.push("/auth/admin-login")
   }
+    const handleNewLogin = () => {
+    router.push("/auth/staff-login")
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -162,12 +165,20 @@ export default function FirstLoginPage() {
               <Button
                 onClick={handleAdminLogin}
                 variant="outline"
-                className="w-full border-red-200 text-red-600 hover:bg-red-50 bg-transparent"
+                className="border-red-200 text-red-600 hover:bg-red-50 bg-transparent"
               >
                 <Crown className="h-4 w-4 mr-2" />
                 Admin Login 👑
               </Button>
-              <p className="text-xs text-gray-500 text-center mt-2">🔐 Administrative access only</p>
+               {/* <div className="pt-4 border-t border-gray-200"> */}
+              <Button
+                onClick={handleNewLogin}
+                variant="outline"
+                className="border-ro-200 text-blue-600 hover:bg-blue-50 bg-transparent ml-8"
+              >
+                
+                New User Login 
+              </Button>
             </div>
           </CardContent>
         </Card>

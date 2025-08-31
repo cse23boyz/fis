@@ -88,7 +88,11 @@ export default function StaffLoginPage() {
       }
 
       // Set current user
-      localStorage.setItem("currentUserId", userCheck.userId)
+      if (userCheck && userCheck.userId) {
+  localStorage.setItem("currentUserId", String(userCheck.userId));
+} else {
+  console.error("userCheck or userId is missing", userCheck);
+}
 
       // Check if profile is complete
       if (
@@ -205,8 +209,8 @@ export default function StaffLoginPage() {
               <ArrowLeft className="h-4 w-4" />
             </Button>
 
-            <CardTitle className="text-2xl font-bold text-gray-800">Staff Portal 👨‍🏫</CardTitle>
-            <CardDescription>Login to your account or register as new faculty</CardDescription>
+            <CardTitle className="text-2xl font-bold text-gray-800">New Faculty 👨‍🏫</CardTitle>
+            <CardDescription>New faculty Get Access Form</CardDescription>
           </CardHeader>
 
           <CardContent>
