@@ -99,10 +99,10 @@ export default function FirstLoginPage() {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
+              <div className="space-y-2 border-opacity-20">
                 <Label htmlFor="username">Username 👤</Label>
                 <div className="relative">
-                  <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                  <User className="absolute left-3 top-3 h-4 w-4 text-gray-400 border-opacity-25"  />
                   <Input
                     id="username"
                     name="username"
