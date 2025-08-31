@@ -215,17 +215,7 @@ export default function StaffLoginPage() {
 
           <CardContent>
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="login" className="flex items-center">
-                  <LogIn className="h-4 w-4 mr-2" />
-                  Login
-                </TabsTrigger>
-                <TabsTrigger value="register" className="flex items-center">
-                  <UserPlus className="h-4 w-4 mr-2" />
-                  Register
-                </TabsTrigger>
-              </TabsList>
-
+             
               {error && (
                 <Alert variant="destructive" className="mt-4">
                   <AlertCircle className="h-4 w-4" />
