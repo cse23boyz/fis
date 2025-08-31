@@ -39,7 +39,7 @@ export default function HomePage() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
-          <Card className="text-center hover:shadow-lg transition-shadow">
+          <Card className="text-center hover:shadow-lg transition-shadow shadow:2xl border-green-200">
             <CardHeader>
               <Users className="h-12 w-12 text-green-600 mx-auto mb-2" />
               <CardTitle>Faculty Management 👥</CardTitle>
@@ -51,7 +51,7 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          <Card className="text-center hover:shadow-lg transition-shadow">
+          <Card className="text-center hover:shadow-lg transition-shadow shadow:2xl border-blue-200">
             <CardHeader>
               <BookOpen className="h-12 w-12 text-blue-600 mx-auto mb-2" />
               <CardTitle>Certification Tracking 📚</CardTitle>
@@ -63,7 +63,7 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          <Card className="text-center hover:shadow-lg transition-shadow">
+          <Card className="text-center hover:shadow-lg transition-shadow shadow:2xl border-violet-200">
             <CardHeader>
               <Award className="h-12 w-12 text-purple-600 mx-auto mb-2" />
               <CardTitle>Admin Dashboard 🏆</CardTitle>

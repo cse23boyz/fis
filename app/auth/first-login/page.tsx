@@ -77,7 +77,7 @@ export default function FirstLoginPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <Card className="shadow-xl">
+        <Card className="shadow-2xl border-blue-200">
           <CardHeader className="text-center relative">
             <Button variant="ghost" size="sm" onClick={handleBack} className="absolute left-4 top-4">
               <ArrowLeft className="h-4 w-4" />
