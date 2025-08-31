@@ -226,7 +226,7 @@ export default function StaffLoginPage() {
               <TabsContent value="login" className="space-y-4 mt-4">
                 <form onSubmit={handleLogin} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="login-username">Username or Email 👤</Label>
+                    <Label htmlFor="login-username">FullName 👤</Label>
                     <div className="relative">
                       <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                       <Input
@@ -243,12 +243,24 @@ export default function StaffLoginPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="login-password">Password 🔑</Label>
+                    <Label htmlFor="login-Email-id">Email-Id</Label>
                     <Input
-                      id="login-password"
-                      name="password"
-                      type="password"
-                      placeholder="Enter your password"
+                      id="login-Email-id"
+                      name="email-id"
+                      type="text"
+                      placeholder="Enter your Email-id"
+                      value={loginData.password}
+                      onChange={handleLoginChange}
+                      required
+                    />
+                  </div>
+                   <div className="space-y-2">
+                    <Label htmlFor="login-FcaultyCode">FcaultyCode</Label>
+                    <Input
+                      id="login-FcaultyCode"
+                      name="FcaultyCode"
+                      type="text"
+                      placeholder="Enter your FcaultyCode"
                       value={loginData.password}
                       onChange={handleLoginChange}
                       required
@@ -262,7 +274,7 @@ export default function StaffLoginPage() {
                         Signing In...
                       </div>
                     ) : (
-                      "Sign In ✨"
+                      "Get Access "
                     )}
                   </Button>
                 </form>
